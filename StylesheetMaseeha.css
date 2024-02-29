@@ -1,0 +1,182 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('Background\ Wave3.jpg');
+    background-size: cover;
+    background-attachment: fixed; 
+}
+/* Centering the header content */
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0); /* Setting background to white */
+}
+
+/* Styling the profile picture */
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    background-image: url('Profile.jpg'); /* Change profile picture filename */
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%; /* Creates a circular shape */
+    display: inline-block;
+    margin-top: 10px;
+    transition: all 0.3s ease; /* Adding transition effect */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0); /* Adding initial shadow */
+}
+
+/* Enlarge profile picture and add glow on hover */
+.profile-pic:hover {
+    transform: scale(1.2); /* Enlarge the profile picture */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add glow effect */
+}
+
+/* Styling the header text */
+.header h1 {
+    font-family: Arial, sans-serif; /* Change font family */
+    color: rgb(0, 0, 0); /* Setting text color */
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.763);
+}
+
+/* Styling the menu */
+.menu {
+    text-align: center; /* Centering the menu */
+    margin-bottom: 20px; /* Adding space below the menu */
+}
+
+/* Styling the menu items */
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: black; /* Setting default text color */
+    transition: all 0.3s ease; /* Adding transition effect */
+    font-family: Arial, sans-serif; /* Change font family */
+}
+
+/* Glow effect on menu items */
+.menu ul li a:hover {
+    color: black; /* Change text color to black */
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Glow effect */
+    transform: scale(1.1); /* Enlarge the button */
+}
+
+/* Styling the homepage content */
+.homepage-content {
+    text-align: center; /* Centering the text */
+    background-color: rgba(255, 255, 255, 0.5); /* Setting background to translucent white */
+    padding: 20px; /* Adding padding */
+    margin: 20px auto; /* Centering the box horizontally */
+    width: 80%; /* Setting width */
+    border-radius: 10px; /* Adding border radius */
+    font-family: Arial, sans-serif; /* Change font family */
+    font-size: 18px; /* Increase font size */
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping to create rows */
+    justify-content: center; /* Center the images horizontally */
+}
+/* Setting the background to white */
+body {
+    background-image: url('Background\ Wave4.jpg'); /* Replace 'new-background-image.jpg' with the path to your new background image */
+    background-size: cover;
+   
+}
+
+
+/* Styling the homepage content */
+
+
+/* Image section */
+.image-section {
+    text-align: center; /* Centering the images */
+}
+
+.animated-image {
+    width: 150px; /* Set image size */
+    height: 150px;
+    border-radius: 50%; /* Make it circular */
+    margin-top: 20px; /* Add margin */
+    opacity: 0; /* Hide initially */
+    animation: slideFromBottom 5s ease forwards; /* Apply animation */
+    transition: all 0.3s ease; /* Adding transition effect */
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+
+.animated-image:hover {
+    transform: scale(2); /* Enlarge the image on hover */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add box shadow on hover */
+}
+
+@keyframes slideFromBottom {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+
+/* Image section styling */
+.image-section {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.translucent-box {
+    width: 200px; /* Adjust size as needed */
+    background-color: rgba(255, 255, 255, 0.7); /* Adjust opacity as needed */
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Add margin between boxes */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.395);
+}
+
+.box-image {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.box-paragraph {
+    margin-top: 10px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.translucent-box {
+    animation: fadeIn 2s ease forwards;
+}
+
+/* If you want to apply the animation to other elements within the boxes */
+.translucent-box * {
+    animation: fadeIn 2s ease forwards;
+}
+
+/* Center the copyright message */
+

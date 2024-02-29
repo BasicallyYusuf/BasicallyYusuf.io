@@ -1,0 +1,160 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('Background\ Wave4.jpg');
+    background-size: cover;
+    background-attachment: fixed; 
+}
+/* Centering the header content */
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0); /* Setting background to white */
+}
+
+/* Styling the profile picture */
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    background-image: url('Profile.jpg'); /* Change profile picture filename */
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%; /* Creates a circular shape */
+    display: inline-block;
+    margin-top: 10px;
+    transition: all 0.3s ease; /* Adding transition effect */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0); /* Adding initial shadow */
+}
+
+/* Enlarge profile picture and add glow on hover */
+.profile-pic:hover {
+    transform: scale(1.1); /* Enlarge the profile picture */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add glow effect */
+}
+
+/* Styling the header text */
+.header h1 {
+    font-family: Arial, sans-serif; /* Change font family */
+    color: black; /* Setting text color */
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Styling the menu */
+.menu {
+    text-align: center; /* Centering the menu */
+    margin-bottom: 20px; /* Adding space below the menu */
+}
+
+/* Styling the menu items */
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: black; /* Setting default text color */
+    transition: all 0.3s ease; /* Adding transition effect */
+    font-family: Arial, sans-serif; /* Change font family */
+}
+
+/* Glow effect on menu items */
+.menu ul li a:hover {
+    color: black; /* Change text color to black */
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Glow effect */
+    transform: scale(1.1); /* Enlarge the button */
+}
+/* Your existing CSS remains the same */
+
+/* New CSS for the content container and media elements */
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 500px;
+    height: 500px;
+}
+
+.textbox {
+    text-align: center; /* Center the text inside the box */
+    background-color: rgba(255, 255, 255, 0.7); /* Setting background to translucent white */
+    padding: 20px; /* Adding padding */
+    width: 30%; /* Adjust width size */
+    border-radius: 10px; /* Adding border radius */
+    font-family: Arial, sans-serif; /* Change font family */
+    font-size: 18px; /* Increase font size */
+    position: absolute;
+    top: calc(100% + 75px); /* Position below the menu */
+    right:48%; /* Align to the right */
+    transform: translate(-50%, -50%); /* Center the box vertically */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.395);
+}
+
+.media-container {
+    width: 500px;
+    height: 500px;
+    display: absolute ;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.picture {
+    width: 500px; /* Increase the size of the circle for the image */
+    height: 500px; /* Adjust height as needed */
+    background-image: url('AchievementGR.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    animation: slideRight 1s forwards; /* Animation for sliding in from the right */
+    position: absolute;
+    left: 50%; /* Align to the right */
+    transform: translate(-50%, -50%); /* Center the box vertically */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    transform: scale(1.2); /* Enlarge the element on hover */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add shadow effect on hover */
+}
+
+.video {
+    width: 500px; /* Ensure the video fills its container */
+    height: 500px; /* Adjust height as needed */
+    border-radius: 50%;
+    animation: slideRight 1s forwards; /* Animation for sliding in from the right */
+     position: absolute;
+    left: 50%; /* Align to the right */
+    bottom: -75%; 
+    transform: translate(-50%, -50%); /* Center the box vertically */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+transform: scale(1.2); /* Enlarge the element on hover */
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add shadow effect on hover */
+}
+
+/* Keyframes for animations */
+@keyframes slideLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideRight {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+

@@ -1,0 +1,173 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('Background\ Wave4.jpg');
+    background-size: cover;
+    background-attachment: fixed; 
+}
+/* Centering the header content */
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0); /* Setting background to white */
+}
+
+/* Styling the profile picture */
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    background-image: url('Profile.jpg'); /* Change profile picture filename */
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%; /* Creates a circular shape */
+    display: inline-block;
+    margin-top: 10px;
+    transition: all 0.3s ease; /* Adding transition effect */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0); /* Adding initial shadow */
+}
+
+/* Enlarge profile picture and add glow on hover */
+.profile-pic:hover {
+    transform: scale(1.2); /* Enlarge the profile picture */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add glow effect */
+}
+
+/* Styling the header text */
+.header h1 {
+    font-family: Arial, sans-serif; /* Change font family */
+    color: black; /* Setting text color */
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Styling the menu */
+.menu {
+    text-align: center; /* Centering the menu */
+    margin-bottom: 20px; /* Adding space below the menu */
+}
+
+/* Styling the menu items */
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: black; /* Setting default text color */
+    transition: all 0.3s ease; /* Adding transition effect */
+    font-family: Arial, sans-serif; /* Change font family */
+}
+
+/* Glow effect on menu items */
+.menu ul li a:hover {
+    color: black; /* Change text color to black */
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Glow effect */
+    transform: scale(1.1); /* Enlarge the button */
+}
+
+/* Styling the homepage content */
+.WhoIsShepage-content {
+    text-align: center; /* Center the text inside the box */
+    background-color: rgba(255, 255, 255, 0.7); /* Setting background to translucent white */
+    padding: 20px; /* Adding padding */
+    width: 30%; /* Adjust width size */
+    border-radius: 10px; /* Adding border radius */
+    font-family: Arial, sans-serif; /* Change font family */
+    font-size: 18px; /* Increase font size */
+    position: absolute;
+    top: calc(100% + 75px); /* Position below the menu */
+    right:48%; /* Align to the right */
+    transform: translate(-50%, -50%); /* Center the box vertically */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.395);
+    
+}
+.whoIsShepage-content1 {
+    text-align: center; /* Center the text inside the box */
+    background-color: rgba(255, 255, 255, 0.7); /* Setting background to translucent white */
+    padding: 20px; /* Adding padding */
+    width: 30%; /* Adjust width size */
+    border-radius: 10px; /* Adding border radius */
+    font-family: Arial, sans-serif; /* Change font family */
+    font-size: 18px; /* Increase font size */
+    position: absolute;
+    top: calc(100% + 75px); /* Position below the menu */
+    left: 80%; /* Align to the right */
+    transform: translate(-50%, -50%); /* Center the box vertically */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.395);
+    
+    
+}
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.container {
+    position: relative;
+    width: 50%;
+    height: 100%;
+   
+}
+
+.animated-image {
+    position: absolute;
+    top: 0;
+    right: 100%; /* Start off-screen to the right */
+    width: calc(50vh + 50vh); /* Set width to 100vw (viewport width) + 100vh (viewport height) */
+    height: 100%;
+    background-image: url('Gallery3.jpg'); /* Replace 'your-image.jpg' with your image path */
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the background image */
+    border-radius: 50%; /* Make it circular */
+    animation: slideFromRight 2s ease forwards; /* Apply animation */
+    z-index: -1; /* Display behind other content */
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+
+.animated-image1 {
+    position: absolute;
+    bottom: -75%;
+    left: 100%; /* Start off-screen to the right */
+    width: calc(50vh + 50vh); /* Set width to 100vw (viewport width) + 100vh (viewport height) */
+    height: 100%; /* Adjust height as needed */
+    background-image: url('Image3MS.jpg'); /* Replace 'your-image.jpg' with your image path */
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the background image */
+    border-radius: 50%; /* Make it circular */
+    z-index: -1; /* Display behind other content */
+    animation: slideFromLeft 4s ease forwards; /* Apply animation */
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+
+@keyframes slideFromLeft {
+    0% {
+        transform: translateX(100%); /* Start off-screen to the right */
+    }
+    100% {
+        transform: translateX(-50%); /* Move to the left and center horizontally */
+    }
+}
+
+@keyframes slideFromRight {
+    0% {
+        transform: translateX(-100%); /* Start off-screen to the left */
+    }
+    100% {
+        transform: translateX(150%); /* Move to the left and center horizontally */
+    }
+}
+/* Center the copyright message */

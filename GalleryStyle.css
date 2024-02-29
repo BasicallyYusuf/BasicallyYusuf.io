@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('Background\ Wave4.jpg');
+    background-size: cover;
+    background-attachment: fixed; 
+}
+
+/* Centering the header content */
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0); /* Setting background to white */
+}
+
+/* Styling the profile picture */
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    background-image: url('Profile.jpg'); /* Change profile picture filename */
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%; /* Creates a circular shape */
+    display: inline-block;
+    margin-top: 10px;
+    transition: all 0.3s ease; /* Adding transition effect */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0); /* Adding initial shadow */
+}
+
+/* Enlarge profile picture and add glow on hover */
+.profile-pic:hover {
+    transform: scale(1.2); /* Enlarge the profile picture */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add glow effect */
+}
+
+/* Styling the header text */
+.header h1 {
+    font-family: Arial, sans-serif; /* Change font family */
+    color: black; /* Setting text color */
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Styling the menu */
+.menu {
+    text-align: center; /* Centering the menu */
+    margin-bottom: 20px; /* Adding space below the menu */
+}
+
+/* Styling the menu items */
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: black; /* Setting default text color */
+    transition: all 0.3s ease; /* Adding transition effect */
+    font-family: Arial, sans-serif; /* Change font family */
+}
+
+/* Glow effect on menu items */
+.menu ul li a:hover {
+    color: black; /* Change text color to black */
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Glow effect */
+    transform: scale(1.1); /* Enlarge the button */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.container {
+    position: relative;
+    width: 100%; /* Adjusted width to fit all images */
+    height: 100%;
+}
+
+
+/* Stacking images vertically and horizontally */
+.row {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping to create rows */
+    justify-content: center; /* Center the images horizontally */
+}
+
+.circle-image {
+    position: relative;
+    width: 200px; /* Adjusted width for circular images */
+    height: 200px; /* Adjusted height for circular images */
+    border-radius: 50%; /* Use 50% border-radius for a circular shape */
+    margin: 25px; /* Adjusted margin to 25px */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    transition: transform 0.5s ease; /* Add transition for smooth effect */
+}
+
+.circle-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Hover effect */
+.circle-image:hover {
+    transform: scale(1.5); /* Enlarge container on hover */
+    z-index: 1; /* Ensure hovered image appears above other images */
+}
+
+.circle-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit; /* Inherit border-radius from .circle-image */
+    border: 2px solid transparent; /* Transparent border initially */
+}
+
+/* Adjust border on hover */
+.circle-image:hover::before {
+    border: 0px solid white; /* Change border color on hover */
+    z-index: -1; /* Ensure hovered image border appears below other images */
+}
+
+/* Show overlay on hover */
+.circle-image:hover::before {
+    opacity: 1; /* Show overlay on hover */
+} 
